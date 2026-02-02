@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 2nd Monthsary 💙</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hearts"></div>
+
+<!-- HOME -->
+<section id="home" class="page active">
+  <h1>Happy 2nd Monthsary, Avi 💙</h1>
+  <p>For my bebi, always and forever</p>
+  <button onclick="goTo('letters')">Open My Heart 💌</button>
+</section>
+
+<!-- LETTERS -->
+<section id="letters" class="page">
+  <h2>Little Love Notes 💌</h2>
+
+  <div class="letter" onclick="openLetter(this)">
+    💌 Tap to open
+    <span>
+      Dear Avi,<br><br>
+      Happy 2nd monthsary, my bebi 💙  
+      Thank you for loving me and making my days brighter.
+      I’m so grateful for you, always.
+    </span>
+  </div>
+
+  <div class="letter" onclick="openLetter(this)">
+    💌 Tap to open
+    <span>
+      My bebi,<br><br>
+      Being with you feels like home.
+      I promise to choose you, care for you,
+      and love you in all the ways that matter.
+    </span>
+  </div>
+
+  <button onclick="goTo('fullLetter')">Read My Letter 💙</button>
+</section>
+
+<!-- FULL LETTER PAGE -->
+<section id="fullLetter" class="page">
+  <h2>For My Bebi 💙</h2>
+
+  <div class="full-letter">
+    <p>
+      My dearest Avi,<br><br>
+
+      Happy 2nd monthsary, my bebi.  
+      Loving you feels natural, gentle, and real.
+      Every moment with you feels safe and warm,
+      like my heart finally found where it belongs.
+      <br><br>
+
+      You are my comfort, my peace,
+      and my favorite part of every day.
+      Thank you for choosing me,
+      for trusting me, and for loving me so sincerely.
+      <br><br>
+
+      I promise to keep choosing you,
+      to grow with you, listen to you,
+      and love you with honesty and care.
+      No matter what comes next,
+      I want it to be with you.
+      <br><br>
+
+      Always yours,<br>
+      Your bebi 💙
+    </p>
+  </div>
+
+  <button onclick="goTo('songs')">Songs That Remind Me of You 🎵</button>
+</section>
+
+<!-- SONGS PAGE -->
+<section id="songs" class="page">
+  <h2>Songs That Remind Me of You 🎵</h2>
+
+  <p>These songs always make me think of my bebi, Avi 💙</p>
+
+  <ul>
+    <li>
+      <strong>Ms. Seductive - Jeff Bernat</strong><br>
+      <audio controls>
+        <source src="ms.seductive.mp3" type="audio/mpeg">
+      </audio>
+    </li>
+    <li>
+      <strong>Robbers - The 1975</strong><br>
+      <audio controls>
+        <source src="robbers.mp3" type="audio/mpeg">
+      </audio>
+    </li>
+    <li>
+      <strong>Balisong - Rico Blanco</strong><br>
+      <audio controls>
+        <source src="balisong.mp3" type="audio/mpeg">
+      </audio>
+    </li>
+    <li>
+      <strong>Di Nakakasawa - Arthur Nery</strong><br>
+      <audio controls>
+        <source src="dinakakasawa.mp3" type="audio/mpeg">
+      </audio>
+    </li>
+    <li>
+      <strong>Get You - Daniel Caesar</strong><br>
+      <audio controls>
+        <source src="getyou.mp3" type="audio/mpeg">
+      </audio>
+    </li>
+    <li>
+      <strong>Snooze - SZA</strong><br>
+      <audio controls>
+        <source src="snooze.mp3" type="audio/mpeg">
+      </audio>
+    </li>
+  </ul>
+
+  <button onclick="goTo('game')">Back to Fun 💕</button>
+</section>
+
+
+
+
+<!-- GAME -->
+<section id="game" class="page">
+  <h2>How Well Do You Know ME? 💕</h2>
+
+  <p>What do I love most about my bebi?</p>
+  <button onclick="showResult('smile')">Your smile 😊</button>
+  <button onclick="showResult('heart')">Your heart 💙</button>
+  <button onclick="showResult('everything')">Everything 💕</button>
+
+  <p id="result"></p>
+
+  <button onclick="goTo('bouquet')">One Last Surprise 🌸</button>
+</section>
+
+<!-- BOUQUET -->
+<section id="bouquet" class="page">
+  <h2>For You, Avi 💐</h2>
+  <button onclick="showBouquet()">Tap Me 🌷</button>
+
+  <img id="flowers" src="avi.png" alt="Bouquet for Avi 💐">
+
+  <p id="finalMessage">
+    Happy 2nd monthsary, my Avi 💙<br>
+       I love you endlessly
+  </p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+
